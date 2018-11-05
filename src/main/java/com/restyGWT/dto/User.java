@@ -1,16 +1,8 @@
-package com.restyGWT.services.users;
+package com.restyGWT.dto;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import java.io.Serializable;
 
-@Entity
-@Table(name = "users")
-public class User {
-
-	@Id
-	@GeneratedValue
+public class User implements Serializable {
 	private Long id;
 
 	private String userName;

@@ -11,15 +11,15 @@ public class UsersService {
 	@Autowired
 	private UserRepository userRepo;
 
-	public List<User> getAllUsers() {
+	public List<UserEntity> getAllUsers() {
 		return userRepo.findAll();
 	}
 
-	public User addUser(User user) {
+	public UserEntity addUser(UserEntity user) {
 		return userRepo.save(user);
 	}
 
-	public User findByName(String userName) {
+	public UserEntity findByName(String userName) {
 		return userRepo.findByuserName(userName);
 	}
 }
