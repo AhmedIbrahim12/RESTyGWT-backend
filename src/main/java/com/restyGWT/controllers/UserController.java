@@ -16,6 +16,7 @@ import com.restyGWT.services.users.UsersService;
 
 @RestController
 @CrossOrigin
+@RequestMapping(path = "/users")
 public class UserController {
 
 	@Autowired
